@@ -50,6 +50,7 @@ pip install -r requirements.txt
 cd ros
 catkin_make
 source devel/setup.sh
+find /home/workspace/your/directory -type f -iname "*.py" -exec chmod +x {} \;
 roslaunch launch/styx.launch
 ```
 4. Run the simulator
