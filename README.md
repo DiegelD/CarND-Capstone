@@ -1,5 +1,70 @@
+# CarND-Capstone-Project-ROS
+Self-Driving Car Engineer Nanodegree Program
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
+![](./readme_data/Behavior_Planner.gif)
+
+## Abstract
+The goal is to enable the self driving car driving around the test track using waypoint navigation and stopping on traffic lights. 
+Every of this waypoints gets the x,y - coordinates of the track and a spesific target velocity, tepending on the traffic light.
+The Controll - System uses the thorttle, steering and brakes to succesfully navigate the
+waypoints with in the correct target velocity.<br> 
+In this project are componets of
+- Perception 
+- Planning 
+- Controlling 
+are implemented.
+
+In the Perception part are traffic ligh detection integreated. In the further also object detection can be integreated. 
+The nessecary infastructure is there. But wasnt on the scope of this project.
+
+In the planning a node is intruduced, **wasypoint updater**. This node sets the target velocity 
+for each wapoint based on the traffic light situation. Since there are no objects around the track. 
+So if a traffic ligh is comming up in horizen the waypoint that leading to that traffic light getting 
+deaccelerated.
+
+In the control sup system is a drive by wire node implemented. That takes target trajectories inforamtion
+as input and sens, control commands to navigate the vehicle.
+
+A ros framework that works with autoware and an simulator is provided by udacity. So that the focus 
+is the abow topics.
+
+Watch here the Planner in [action](https://youtu.be/qC0Bk1E7Hy8W).
+
+Overview
+---
+1. Intro Behavior Planner
+2. Prediction 
+3. Behavior Planner
+4. Trajectory Planner
+5. Appendix: *Build Instructions & Simulator* ...
+
+## Intro Behavior Planner
+The following system arichtecute diagmm showing the ROS nodes and topic used in this project. 
+The ROS topics show in the diagarm are desrcibed briefly in the **Code Structure** section below, and 
+more detail is provieded later. 
+
+<figure>
+ <img src="./imgs/BC_overview.png" width="360" alt="System achitecture" />
+ <figcaption>
+ <p></p> 
+ <p style="text-align: center;"> Fig. 1: System achitecture. </p> 
+ </figcaption>
+</figure>
+ <p></p>
+
+*Personal Note, after you understand a "Behavior Planner" you will never look at you own drive skill the same level as before*
+
+**What functionalities belog to a Behavior Planner and what is a Path Planner**? 
+The figure below shows the full interactions of a Behavior Planner with all its belonging functionality, control flows and the update times. 
+The green box marks the area that is commonly knowns as Path-Planner. This is the focus of this project. To enable me to focus on 
+this, all the other functions outside the Path Planner are provided by Udacity and 
+briefly described in the appendix.
+
+
 This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car. For more information about the project, see the project introduction [here](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2/modules/e1a23b06-329a-4684-a717-ad476f0d8dff/lessons/462c933d-9f24-42d3-8bdc-a08a5fc866e4/concepts/5ab4b122-83e6-436d-850f-9f4d26627fd9).
 
+## Appendix
 Please use **one** of the two installation options, either native **or** docker installation.
 
 ### Native Installation
