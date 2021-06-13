@@ -36,9 +36,10 @@ Overview
 ---
 1. System Architecture
 2. Prediction 
-3. Behavior Planner
-4. Trajectory Planner
-5. Appendix: *Build Instructions & Simulator* ...
+3. Planning
+4. Control
+5. Debugging
+6. Appendix: *Build Instructions & Simulator* ...
 
 ## Intro Behavior Planner
 The following system architecute diagm showing the ROS nodes and topic used in this project. 
@@ -91,6 +92,8 @@ The nessecary infastructure is already there. But that wasnt on the scope of thi
  </figcaption>
 </figure>
  <p></p>
+
+ ## Debugging
 
 ## Appendix
 Please use **one** of the two installation options, either native **or** docker installation.
