@@ -66,12 +66,31 @@ In the perception part traffic ligh detection is integreated. So the infrastruct
 </figure>
  <p></p>
 
-
-
-
-To enhance the project further a traffic ligh classifyer can be trained an integreaed, simlar to my 
+ To enhance the project further a traffic ligh classifyer can be trained an integreaed, simlar to my 
 project traffic sign classifyer. Also an object detection could be integreated. 
 The nessecary infastructure is already there. But that wasnt on the scope of this project.
+
+## Planning
+
+<figure>
+ <img src="./imgs/planning_node.png" width="360" alt="Waypoint Updater" />
+ <figcaption>
+ <p></p> 
+ <p style="text-align: center;"> Fig. 3: Planning Node, Waypoint Updater. </p> 
+ </figcaption>
+</figure>
+ <p></p>
+
+## Control
+
+<figure>
+ <img src="./imgs/control_node.png" width="360" alt="Control Node" />
+ <figcaption>
+ <p></p> 
+ <p style="text-align: center;"> Fig. 4: Drive by Wire Node. </p> 
+ </figcaption>
+</figure>
+ <p></p>
 
 ## Appendix
 Please use **one** of the two installation options, either native **or** docker installation.
