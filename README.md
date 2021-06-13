@@ -45,7 +45,7 @@ The ROS topics show in the diagarm are desrcibed briefly in the **Code Structure
 more detail is provieded later. 
 
 <figure>
- <img src="./imgs/system_architecture.png" width="460" alt="System achitecture" />
+ <img src="./imgs/system_architecture.png" width="560" alt="System achitecture" />
  <figcaption>
  <p></p> 
  <p style="text-align: center;"> Fig. 1: System achitecture. </p> 
