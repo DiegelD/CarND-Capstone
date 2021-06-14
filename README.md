@@ -27,10 +27,9 @@ Overview
 2. Perception 
 3. Planning
 4. Control
-5. Debugging
-6. Appendix: *Build Instructions & Simulator* ...
+5. Appendix: *Build Instructions & Simulator* ...
 
-## System Architecture
+## 1) System Architecture
 The following system architecture diagram shows the ROS nodes and topic used in this project. 
 The ROS topics are desrcibed briefly in the **Code Structure** section below.
 
@@ -43,7 +42,7 @@ The ROS topics are desrcibed briefly in the **Code Structure** section below.
 </figure>
  <p></p>
 
-## Perception
+## 2) Perception
 This package contains the traffic light detection node: `tl_detector.py`. 
 This node takes in data from the `/image_color`, `/current_pose`, and `/base_waypoints` topics and 
 publishes the locations to stop for red traffic lights to the `/traffic_waypoint` topic.
@@ -69,7 +68,7 @@ Also an object detection could be integreated like in this [repo](https://github
 This should than take place within this file `../tl_detector/light_classification_model/tl_classfier.py`.
 The nessecary infastructure is already provided there. However this wasn`t in the scope of this project.
 
-## Planning
+## 3) Planning
 This package contains the waypoint updater node: `waypoint_updater.py`.
 The purpose of this node is to update the target velocity property of each waypoint based on
 traffic light detection data. This node will subscribe to the /base_waypoints, 
@@ -85,7 +84,7 @@ ahead of the car with target velocities to the `/final_waypoints` topic.
 </figure>
  <p></p>
 
-## Control
+## 4) Control
 The self driving car is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, 
 and steering have electronic control. This package contains the files that are responsible for
 control of the vehicle: the node `dbw_node.py` and the file `twist_controller.py`, along with a `pid.py` 
@@ -104,11 +103,11 @@ to the `/vehicle/throttle_cmd`, `/vehicle/brake_cmd`, and `/vehicle/steering_cmd
 </figure>
  <p></p>
 
- ## Debugging
-
 ## Appendix
 
-in addition to these packages you will find the following, which are not necessary to change for the project. The styx and styx_msgs packages are used to provide a link between the simulator and ROS, and to provide custom ROS message types:
+In addition to these packages you will find the following, which are provided by Udacity.
+The styx and styx_msgs packages are used to provide a link between the simulator and ROS, and to
+provide custom ROS message types:
 
 ### path_to_project_repo)/ros/src/styx/
 
