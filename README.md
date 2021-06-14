@@ -2,7 +2,7 @@
 Self-Driving Car Engineer Nanodegree Program
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-![](./readme_data/Behavior_Planner.gif)
+![](./imgs/capstone_intersection.gif)
 
 ## Abstract
 The goal of this project is to enable a self driving car, driving around a given test track 
@@ -19,7 +19,7 @@ So in this project components of
 are implemented in a ROS-framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai).
 This framework is provided by Udacity along with a simulator to test the code.
 
-Watch here the car in [action](https://youtu.be/mR1VSxhwBT4).
+Watch the car in [action](https://youtu.be/mR1VSxhwBT4).
 
 Overview
 ---
