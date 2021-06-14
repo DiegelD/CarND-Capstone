@@ -16,8 +16,8 @@ So in this project componets of
 - Planning 
 - Controlling  
 
-are implemented in a ros framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai)
-and is provided with an simlator to test the code by Udacity. 
+are implemented in a ros framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai).
+This framework is provided by Udacity along with a simlator to test the code.
 
 Watch here the Planner in [action](https://youtu.be/qC0Bk1E7Hy8W).
 
