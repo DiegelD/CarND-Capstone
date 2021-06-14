@@ -70,16 +70,11 @@ This should than take place within this file `../tl_detector/light_classificatio
 The nessecary infastructure is already provided there. However this wasn`t in the scope of this project.
 
 ## Planning
-In the planning a node is intruduced, **waypoint updater**. This node sets the target velocity 
-for each wapoint based on the traffic light situation. Since there are no objects around the track. 
-So if a traffic ligh is comming up in horizen the waypoint that leading to that traffic light getting 
-deaccelerated.
-
-This package contains the waypoint updater node: waypoint_updater.py.
+This package contains the waypoint updater node: `waypoint_updater.py`.
 The purpose of this node is to update the target velocity property of each waypoint based on
-traffic light and obstacle detection data. This node will subscribe to the /base_waypoints, 
-/current_pose, /obstacle_waypoint, and /traffic_waypoint topics, and publish a list of waypoints
-ahead of the car with target velocities to the /final_waypoints topic.
+traffic light detection data. This node will subscribe to the /base_waypoints, 
+`/current_pose`, `/obstacle_waypoint`, and `/traffic_waypoint topics`, and publish a list of waypoints
+ahead of the car with target velocities to the `/final_waypoints` topic.
 
 <figure>
  <img src="./imgs/planning_node.png" width="360" alt="Waypoint Updater" />
