@@ -14,7 +14,8 @@ waypoints with in the correct target velocity.<br>
 In this project are componets of
 - Perception 
 - Planning 
-- Controlling<br> 
+- Controlling  
+ 
 are implemented in ros framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai)
 and an simulator is provided by udacity. 
 
