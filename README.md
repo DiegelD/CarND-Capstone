@@ -31,7 +31,7 @@ Overview
 6. Appendix: *Build Instructions & Simulator* ...
 
 ## System Architecture
-The following system architecute diagm is showing the ROS nodes and topic used in this project. 
+The following system architecute diagram shows the ROS nodes and topic used in this project. 
 The ROS topics show in the diagarm are desrcibed briefly in the **Code Structure** section below, and 
 more detail is provieded later. 
 
