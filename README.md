@@ -64,9 +64,10 @@ Traffic light detection takes place within `tl_detector.py`.
  <p></p>
  
 To enhance the project further a traffic ligh classifyer can be trained and integreated, similar to my 
-project traffic sign classifyer. Also an object detection could be integreated. 
-This should be than take place within the file `../tl_detector/light_classification_model/tl_classfier.py`.
-The nessecary infastructure is already there. But that wasnt on the scope of this project.
+project [traffic sign classifyer](https://github.com/DiegelD/Traffic_Sign_Classfier).
+Also an object detection could be integreated like in this [repo](https://github.com/udacity/CarND-Object-Detection-Lab). 
+This should than take place within this file `../tl_detector/light_classification_model/tl_classfier.py`.
+The nessecary infastructure is already provided there. However this wasn`t on the scope of this project.
 
 ## Planning
 In the planning a node is intruduced, **waypoint updater**. This node sets the target velocity 
