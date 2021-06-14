@@ -7,18 +7,16 @@ Self-Driving Car Engineer Nanodegree Program
 ## Abstract
 The goal of this project is to enable a self driving car, driving around a given test track 
 using waypoint navigation and stopping on traffic lights. 
-Every of this waypoints gets the x,y - coordinates of the track and a spesific target velocity, tepending on the traffic light.
+Every of this waypoints gets the x,y - coordinates of the track and a specific target velocity, 
+depending on the traffic light sign and distance.
 The Controll - System uses the thorttle, steering and brakes to succesfully navigate the
 waypoints with in the correct target velocity.<br> 
 In this project are componets of
 - Perception 
 - Planning 
-- Controlling 
-are implemented. 
-
-A ros framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai)
-and an simulator is provided by udacity. So that the focus 
-is the abow topics.
+- Controlling<br> 
+are implemented in ros framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai)
+and an simulator is provided by udacity. 
 
 Watch here the Planner in [action](https://youtu.be/qC0Bk1E7Hy8W).
 
@@ -32,7 +30,7 @@ Overview
 6. Appendix: *Build Instructions & Simulator* ...
 
 ## System Architecture
-The following system architecute diagm showing the ROS nodes and topic used in this project. 
+The following system architecute diagm is showing the ROS nodes and topic used in this project. 
 The ROS topics show in the diagarm are desrcibed briefly in the **Code Structure** section below, and 
 more detail is provieded later. 
 
