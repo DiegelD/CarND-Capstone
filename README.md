@@ -9,15 +9,15 @@ The goal of this project is to enable a self driving car, driving around a given
 using waypoint navigation and stopping on traffic lights. 
 Every of this waypoints gets its x,y - coordinates of the track and a specific target velocity, 
 depending on the traffic light signal and the distance to it.<br> 
-The Control - System uses the thorttle, steering and brakes to succesfully navigate the
+The Control - System uses the throttle, steering and brakes to successfully navigate the
 waypoints within the correct target velocity.<br> 
-So in this project componets of
+So in this project components of
 - Perception 
 - Planning 
 - Controlling  
 
-are implemented in a ros framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai).
-This framework is provided by Udacity along with a simlator to test the code.
+are implemented in a ROS-framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai).
+This framework is provided by Udacity along with a simulator to test the code.
 
 Watch here the car in [action](https://youtu.be/mR1VSxhwBT4).
 
@@ -31,13 +31,13 @@ Overview
 
 ## 1) System Architecture
 The following system architecture diagram shows the ROS nodes and topic used in this project. 
-The ROS topics are desrcibed briefly in the **Code Structure** section below.
+The ROS topics are described briefly in the **Code Structure** section below.
 
 <figure>
- <img src="./imgs/system_architecture.png" width="600" alt="System achitecture" />
+ <img src="./imgs/system_architecture.png" width="600" alt="System architecture" />
  <figcaption>
  <p></p> 
- <p style="text-align: center;"> Fig. 1: System achitecture. </p> 
+ <p style="text-align: center;"> Fig. 1: System architecture. </p> 
  </figcaption>
 </figure>
  <p></p>
@@ -62,11 +62,11 @@ Traffic light detection takes place within `tl_detector.py`.
 </figure>
  <p></p>
  
-To enhance the project further a traffic ligh classifyer can be trained and integreated, similar to my 
-project [traffic sign classifyer](https://github.com/DiegelD/Traffic_Sign_Classfier).
-Also an object detection could be integreated like in this [repo](https://github.com/udacity/CarND-Object-Detection-Lab). 
+To enhance the project further a traffic light classifier can be trained and integrated, similar to my 
+project [traffic sign classifier](https://github.com/DiegelD/Traffic_Sign_Classifier).
+Also an object detection could be integrated like in this [repo](https://github.com/udacity/CarND-Object-Detection-Lab). 
 This should than take place within this file `../tl_detector/light_classification_model/tl_classfier.py`.
-The nessecary infastructure is already provided there. However this wasn`t in the scope of this project.
+The necessary infrastructure is already provided there. However this wasn`t in the scope of this project.
 
 ## 3) Planning
 This package contains the waypoint updater node: `waypoint_updater.py`.
