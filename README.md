@@ -5,7 +5,8 @@ Self-Driving Car Engineer Nanodegree Program
 ![](./readme_data/Behavior_Planner.gif)
 
 ## Abstract
-The goal is to enable the self driving car driving around the test track using waypoint navigation and stopping on traffic lights. 
+The goal of this project is to enable a self driving car, driving around a given test track 
+using waypoint navigation and stopping on traffic lights. 
 Every of this waypoints gets the x,y - coordinates of the track and a spesific target velocity, tepending on the traffic light.
 The Controll - System uses the thorttle, steering and brakes to succesfully navigate the
 waypoints with in the correct target velocity.<br> 
