@@ -10,13 +10,13 @@ using waypoint navigation and stopping on traffic lights.
 Every of this waypoints gets its x,y - coordinates of the track and a specific target velocity, 
 depending on the traffic light signal and the distance to it.<br> 
 The Control - System uses the thorttle, steering and brakes to succesfully navigate the
-waypoints with in the correct target velocity.<br> 
-In this project are componets of
+waypoints within the correct target velocity.<br> 
+In this project componets of
 - Perception 
 - Planning 
 - Controlling  
 
-are implemented in ros framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai)
+are implemented in a ros framework that works with [Autoware](https://github.com/Autoware-AI/autoware.ai)
 and an simulator is provided by udacity. 
 
 Watch here the Planner in [action](https://youtu.be/qC0Bk1E7Hy8W).
