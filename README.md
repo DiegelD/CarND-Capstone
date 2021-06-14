@@ -51,9 +51,8 @@ publishes the locations to stop for red traffic lights to the `/traffic_waypoint
 The `/current_pose` topic provides the vehicle's current position and `/base_waypoints` provides 
 a complete list of waypoints the car will be following.
 In this project the  traffic light detection node is implemented and a traffic light classification node
-could be added in the future.
-Traffic light detection takes place within `tl_detector.py`, whereas traffic light 
-classification should take place within `../tl_detector/light_classification_model/tl_classfier.py`.
+could be added in the future, since it is not in the focus of this project.
+Traffic light detection takes place within `tl_detector.py`. 
 
 <figure>
  <img src="./imgs/tl_node.png" width="360" alt="Traffic Light Node" />
@@ -63,9 +62,10 @@ classification should take place within `../tl_detector/light_classification_mod
  </figcaption>
 </figure>
  <p></p>
-
-To enhance the project further a traffic ligh classifyer can be trained and integreaed, simlar to my 
+ 
+To enhance the project further a traffic ligh classifyer can be trained and integreated, similar to my 
 project traffic sign classifyer. Also an object detection could be integreated. 
+This should be than take place within the file `../tl_detector/light_classification_model/tl_classfier.py`.
 The nessecary infastructure is already there. But that wasnt on the scope of this project.
 
 ## Planning
