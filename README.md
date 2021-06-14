@@ -67,7 +67,7 @@ To enhance the project further a traffic ligh classifyer can be trained and inte
 project [traffic sign classifyer](https://github.com/DiegelD/Traffic_Sign_Classfier).
 Also an object detection could be integreated like in this [repo](https://github.com/udacity/CarND-Object-Detection-Lab). 
 This should than take place within this file `../tl_detector/light_classification_model/tl_classfier.py`.
-The nessecary infastructure is already provided there. However this wasn`t on the scope of this project.
+The nessecary infastructure is already provided there. However this wasn`t in the scope of this project.
 
 ## Planning
 In the planning a node is intruduced, **waypoint updater**. This node sets the target velocity 
