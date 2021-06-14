@@ -86,17 +86,14 @@ ahead of the car with target velocities to the `/final_waypoints` topic.
  <p></p>
 
 ## Control
-In the control sup system is a drive by wire node implemented. That takes target trajectories inforamtion
-as input and sens, control commands to navigate the vehicle.
-
-Carla is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, 
+The self driving car is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, 
 and steering have electronic control. This package contains the files that are responsible for
-control of the vehicle: the node dbw_node.py and the file twist_controller.py, along with a pid 
-and lowpass filter that you can use in your implementation. The dbw_node subscribes to
-the /current_velocity topic along with the /twist_cmd topic to receive target linear and angular
-velocities. Additionally, this node will subscribe to /vehicle/dbw_enabled, which indicates if the 
+control of the vehicle: the node `dbw_node.py` and the file `twist_controller.py`, along with a `pid.py` 
+and lowpass filter `lowpass.py` that are implemented. The dbw_node subscribes to
+the `/current_velocity` topic along with the `/twist_cmd` topic to receive target linear and angular
+velocities. Additionally, this node will subscribe to `/vehicle/dbw_enabled`, which indicates if the 
 car is under dbw or driver control. This node will publish throttle, brake, and steering commands
-to the /vehicle/throttle_cmd, /vehicle/brake_cmd, and /vehicle/steering_cmd topics.
+to the `/vehicle/throttle_cmd`, `/vehicle/brake_cmd`, and `/vehicle/steering_cmd` topics.
 
 <figure>
  <img src="./imgs/control_node.png" width="360" alt="Control Node" />
