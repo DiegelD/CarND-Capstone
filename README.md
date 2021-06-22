@@ -106,7 +106,7 @@ to the `/vehicle/throttle_cmd`, `/vehicle/brake_cmd`, and `/vehicle/steering_cmd
 ## Appendix
 
 ### Further Reading
-You might also check out these resources for further research:
+You might also check out these resources for further research:<br> 
 [How Drive-by-wire Technology Works](https://auto.howstuffworks.com/car-driving-safety/safety-regulatory-devices/drive-by-wire.htm)<br> 
 [Path Planning for Collision Avoidance Maneuver](https://www.researchgate.net/publication/267596342_Path_Planning_for_Collision_Avoidance_Maneuver)<br> 
 [YOLO ROS Node for Traffic Light Detection](https://github.com/chrisgundling/YoloLight)<br> 
