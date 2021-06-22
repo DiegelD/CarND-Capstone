@@ -107,9 +107,9 @@ to the `/vehicle/throttle_cmd`, `/vehicle/brake_cmd`, and `/vehicle/steering_cmd
 
 ### Further Reading
 You might also check out these resources for further research:
-[How Drive-by-wire Technology Works](https://auto.howstuffworks.com/car-driving-safety/safety-regulatory-devices/drive-by-wire.htm)
-[Path Planning for Collision Avoidance Maneuver](https://www.researchgate.net/publication/267596342_Path_Planning_for_Collision_Avoidance_Maneuver)
-[YOLO ROS Node for Traffic Light Detection](https://github.com/chrisgundling/YoloLight)
+[How Drive-by-wire Technology Works](https://auto.howstuffworks.com/car-driving-safety/safety-regulatory-devices/drive-by-wire.htm)<br> 
+[Path Planning for Collision Avoidance Maneuver](https://www.researchgate.net/publication/267596342_Path_Planning_for_Collision_Avoidance_Maneuver)<br> 
+[YOLO ROS Node for Traffic Light Detection](https://github.com/chrisgundling/YoloLight)<br> 
 
 ### Udacity, System & Build Information
 In addition to these packages you will find the following, which are provided by Udacity.
