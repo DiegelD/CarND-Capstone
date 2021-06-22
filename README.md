@@ -105,29 +105,36 @@ to the `/vehicle/throttle_cmd`, `/vehicle/brake_cmd`, and `/vehicle/steering_cmd
 
 ## Appendix
 
+### Further Reading
+You might also check out these resources for further research:
+[How Drive-by-wire Technology Works](https://auto.howstuffworks.com/car-driving-safety/safety-regulatory-devices/drive-by-wire.htm)
+[Path Planning for Collision Avoidance Maneuver](https://www.researchgate.net/publication/267596342_Path_Planning_for_Collision_Avoidance_Maneuver)
+[YOLO ROS Node for Traffic Light Detection](https://github.com/chrisgundling/YoloLight)
+
+### Udacity, System & Build Information
 In addition to these packages you will find the following, which are provided by Udacity.
 The styx and styx_msgs packages are used to provide a link between the simulator and ROS, and to
 provide custom ROS message types:
 
-### path_to_project_repo)/ros/src/styx/
+#### path_to_project_repo)/ros/src/styx/
 
 A package that contains a server for communicating with the simulator, and a bridge to translate and publish simulator messages to ROS topics.
 
-### path_to_project_repo)/ros/src/styx_msgs/
+#### path_to_project_repo)/ros/src/styx_msgs/
 
 A package which includes definitions of the custom ROS message types used in the project.
 
-### path_to_project_repo)/ros/src/waypoint_loader/
+#### path_to_project_repo)/ros/src/waypoint_loader/
 
 A package which loads the static waypoint data and publishes to /base_waypoints.
 
-### path_to_project_repo)/ros/src/waypoint_follower/
+#### path_to_project_repo)/ros/src/waypoint_follower/
 
 A package containing code from Autoware which subscribes to /final_waypoints and publishes target vehicle linear and angular velocities in the form of twist commands to the /twist_cmd topic.
 
 Please use **one** of the two installation options, either native **or** docker installation.
 
-### Native Installation
+#### Native Installation
 
 * Be sure that your workstation is running Ubuntu 16.04 Xenial Xerus or Ubuntu 14.04 Trusty Tahir. [Ubuntu downloads can be found here](https://www.ubuntu.com/download/desktop).
 * If using a Virtual Machine to install Ubuntu, use the following configuration as minimum:
@@ -142,7 +149,7 @@ Please use **one** of the two installation options, either native **or** docker 
   * [ROS Indigo](http://wiki.ros.org/indigo/Installation/Ubuntu) if you have Ubuntu 14.04.
 * Download the [Udacity Simulator](https://github.com/udacity/CarND-Capstone/releases).
 
-### Docker Installation
+#### Docker Installation
 [Install Docker](https://docs.docker.com/engine/installation/)
 
 Build the docker container
@@ -155,10 +162,10 @@ Run the docker file
 docker run -p 4567:4567 -v $PWD:/capstone -v /tmp/log:/root/.ros/ --rm -it capstone
 ```
 
-### Port Forwarding
+#### Port Forwarding
 To set up port forwarding, please refer to the "uWebSocketIO Starter Guide" found in the classroom (see Extended Kalman Filter Project lesson).
 
-### Usage
+#### Usage
 
 1. Clone the project repository
 ```bash
@@ -180,7 +187,7 @@ roslaunch launch/styx.launch
 ```
 4. Run the simulator
 
-### Real world testing
+#### Real world testing
 1. Download [training bag](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic_light_bag_file.zip) that was recorded on the Udacity self-driving car.
 2. Unzip the file
 ```bash
@@ -197,7 +204,7 @@ roslaunch launch/site.launch
 ```
 5. Confirm that traffic light detection works on real life images
 
-### Other library/driver information
+#### Other library/driver information
 Outside of `requirements.txt`, here is information on other driver/library versions used in the simulator and Carla:
 
 Specific to these libraries, the simulator grader and Carla use the following:
